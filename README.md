@@ -3,3 +3,5 @@
 
 <a href="https://codeclimate.com/github/BoCXoD-man/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/2d4fc41fd855fa461195/maintainability" /></a>
 
+# brain-even
+https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE
