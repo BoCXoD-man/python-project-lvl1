@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 """Game engine functions."""
 
-import prompt
 from random import randint
 
 from brain_games.cli import get_user_answer, get_user_name
