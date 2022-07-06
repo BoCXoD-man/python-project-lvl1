@@ -1,7 +1,19 @@
-### Hexlet tests and linter status:
+### Brain Games
 [![Actions Status](https://github.com/BoCXoD-man/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/BoCXoD-man/python-project-lvl1/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2d4fc41fd855fa461195/maintainability)](https://codeclimate.com/github/BoCXoD-man/python-project-lvl1/maintainability)
 
-<a href="https://codeclimate.com/github/BoCXoD-man/python-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/2d4fc41fd855fa461195/maintainability" /></a>
 
-# brain-even
-https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE
+This is my first projects on the Python Software Developer course on [Hexlet.io](https://ru.hexlet.io)
+
+The package contains next short games:
+
+- 'Even or no even' `brain-even`
+- 'Calculator' `brain-calc`
+
+## Video:
+
+### Brain Even
+
+[![asciicast](https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE)
+
+### Brain Calc
