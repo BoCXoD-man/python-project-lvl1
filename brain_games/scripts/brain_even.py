@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Game even or no even"""
 
-from brain_games.engine import brain_even
+from brain_games.games.brain_even import brain_even
 
 
 def main():
