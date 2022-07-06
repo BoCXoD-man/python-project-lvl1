@@ -14,6 +14,7 @@ The package contains next short games:
 
 ### Brain Even
 
-[![asciicast](https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE)
-
+[![asciicast](https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE.svg)](https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE)
 ### Brain Calc
+
+
