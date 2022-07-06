@@ -10,11 +10,11 @@ The package contains next short games:
 - 'Even or no even' `brain-even`
 - 'Calculator' `brain-calc`
 
-## Video:
+### Video:
 
 ### Brain Even
 
 [![asciicast](https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE.svg)](https://asciinema.org/a/BXFe8Lh6sxdxBZYLCDXxMdvsE)
 ### Brain Calc
 
-
+[![asciicast](https://asciinema.org/a/hu1DSMyiponyxxowGFPH03MWf.svg)](https://asciinema.org/a/hu1DSMyiponyxxowGFPH03MWf)
