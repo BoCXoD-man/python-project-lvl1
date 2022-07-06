@@ -1,10 +1,13 @@
-""" Module Welcome User"""
+"""CLI functions."""
 
 import prompt
 
 
-def welcome_user():
-    """ Print Welcome User"""
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!')
+def get_user_name():
+    """Get username."""
+    return prompt.string('May I have your name? ')
+
+
+def get_user_answer():
+    """Get user answer."""
+    return prompt.string('Your answer: ')
