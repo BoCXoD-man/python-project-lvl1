@@ -1,12 +1,14 @@
-#!/usr/bin/env python
-"""Game even or no even"""
+#!/usr/bin/env python3
 
-from brain_games.games.brain_even import brain_even
+"""Brain even game."""
+
+from brain_games.engine import start
+from brain_games.games import brain_even
 
 
 def main():
-    """Start Brain_Even"""
-    brain_even()
+    """Start even game."""
+    start(brain_even)
 
 
 if __name__ == '__main__':
