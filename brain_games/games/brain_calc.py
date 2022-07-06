@@ -6,9 +6,9 @@ from brain_games.engine import generate_number
 DESCRIPTION = 'What is the result of the expression?'
 
 operation = {
-    '+': operator.add(),
-    '-': operator.sub(),
-    '*': operator.mul()
+    '+': operator.add,
+    '-': operator.sub,
+    '*': operator.mul
 }
 
 
