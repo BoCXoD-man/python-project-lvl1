@@ -14,13 +14,6 @@ def welcome():
     return name
 
 
-# First game
-def generation_question():
-    qwest = randint(0, 101)
-    print(f'Question: {qwest}')
-    return 'yes' if qwest % 2 == 0 else 'no'
-
-
-def answer():
-    ent = prompt.string('Your answer: ')
-    return ent
+def generate_number():
+    """Generate random Number"""
+    return randint(1, 101)
