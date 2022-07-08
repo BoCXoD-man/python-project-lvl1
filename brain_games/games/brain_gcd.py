@@ -1,6 +1,3 @@
-import operator
-from random import choice
-
 from brain_games.engine import generate_number
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
@@ -19,6 +16,6 @@ def correct_answer(num1, num2):
     num1, num2 = min(num1, num2), max(num1, num2)
     list_com_div = []  # list_common_divisor
     for i in range(1, num2 + 1):
-        if num1 % i == 0 and mum2 % i == 0:
+        if num1 % i == 0 and num2 % i == 0:
             list_com_div.append(i)
     return max(list_com_div)
