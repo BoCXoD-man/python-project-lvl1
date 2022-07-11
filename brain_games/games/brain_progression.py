@@ -26,4 +26,4 @@ def make_question():
 
 def correct_answer(ans_pr):
     """Return True answer."""
-    return ans_pr
+    return str(ans_pr)
