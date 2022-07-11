@@ -8,9 +8,9 @@ from brain_games.cli import get_user_answer, get_user_name
 NUMBER_OF_ROUNDS = 3
 
 
-def generate_number():
+def generate_number(n1=1, n2=100):
     """Generate random Number"""
-    return randint(1, 101)
+    return randint(n1, n2)
 
 
 def start(game=None):
