@@ -19,5 +19,8 @@ The package contains next short games:
 
 [![asciicast](https://asciinema.org/a/hu1DSMyiponyxxowGFPH03MWf.svg)](https://asciinema.org/a/hu1DSMyiponyxxowGFPH03MWf)
 
-# Brain GCD
+### Brain GCD
 [![asciicast](https://asciinema.org/a/Bidz26LJRThyYobkkhyLdWqMW.svg)](https://asciinema.org/a/Bidz26LJRThyYobkkhyLdWqMW)
+
+### Brain Progression
+[![asciicast](https://asciinema.org/a/wSqSMjHWcMYNiwLgfzrLm3mFR.svg)](https://asciinema.org/a/wSqSMjHWcMYNiwLgfzrLm3mFR)
