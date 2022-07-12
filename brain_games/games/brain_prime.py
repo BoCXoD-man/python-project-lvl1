@@ -28,4 +28,3 @@ def is_prime(num):
 def correct_answer(num):
     """Return True answer."""
     return 'yes' if is_prime(num) else 'no'
-
