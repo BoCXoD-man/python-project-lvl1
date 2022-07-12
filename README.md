@@ -9,6 +9,10 @@ The package contains next short games:
 
 - 'Even or no even' `brain-even`
 - 'Calculator' `brain-calc`
+- 'GCD' `brain-gcd`
+- 'Progression' `brain-progression`
+- 'Prime' `brain-prime`
+
 
 ### Video:
 
@@ -24,3 +28,6 @@ The package contains next short games:
 
 ### Brain Progression
 [![asciicast](https://asciinema.org/a/wSqSMjHWcMYNiwLgfzrLm3mFR.svg)](https://asciinema.org/a/wSqSMjHWcMYNiwLgfzrLm3mFR)
+
+### Brain Prime
+[![asciicast](https://asciinema.org/a/TtKl6hALyhr7fkGuq0ocuLHzy.svg)](https://asciinema.org/a/TtKl6hALyhr7fkGuq0ocuLHzy)
