@@ -5,24 +5,19 @@ from brain_games.engine import generate_number
 
 DESCRIPTION = 'What is the result of the expression?'
 
-operation = {
+operations = {
     '+': operator.add,
     '-': operator.sub,
     '*': operator.mul
 }
 
 
-def generate_operation():
-    """Generate random choice operations from the dictionary"""
-    return choice(list(operation.keys()))
-
-
 def make_question():
     """Generate question."""
     num1, num2 = generate_number(), generate_number()
-    oper = generate_operation()  # oper - operation
-    question = f'Question: {num1} {oper} {num2}'
-    answer = correct_answer(num1, num2, oper)
+    operation = choice(list(operations.keys()))  # oper - operation
+    question = f'Question: {num1} {operation} {num2}'
+    answer = correct_answer(num1, num2, operation)
     return (question, answer)
 
 
