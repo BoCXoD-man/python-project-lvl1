@@ -29,7 +29,7 @@ def engine(game=None):
         # The body of function "Run" below
         correct_answers = 0
         while correct_answers < NUMBER_OF_ROUNDS:
-            question, correct_answer = game.make_question
+            question, correct_answer = game.make_question()
             print(question)
             result, msg = check_answer(prompt.string('Your answer: '), correct_answer)
             print(msg)
