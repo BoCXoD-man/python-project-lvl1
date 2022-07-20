@@ -13,16 +13,31 @@ def generate_number(n1=1, n2=100):
     return randint(n1, n2)
 
 
-def start(game=None):
+def engine(game=None):
     """Start game."""
     print('Welcome to the Brain Games!')
     if game:
         print(game.DESCRIPTION)
     print()
-    user_name = welcome_user()
+    # Welcome user 3 string
+    user_name = prompt.string('May I have your name? ')
+    greeting = f'Hello, {user_name}!'
+    print(greeting)
     if game:
         print()
-        engine(user_name, game.make_question)
+        # run(user_name, game.make_question)
+        # The body of function "Run" below
+        correct_answers = 0
+        while correct_answers < NUMBER_OF_ROUNDS:
+            question, correct_answer = game.make_question
+            print(question)
+            result, msg = check_answer(prompt.string('Your answer: '), correct_answer)
+            print(msg)
+            if not result:
+                print(f"Let's try again, {user_name}!")
+                return
+            correct_answers += 1
+        print(f'Congratulations, {user_name}!')
 
 
 def check_answer(user_answer, correct_answer):
@@ -34,35 +49,8 @@ def check_answer(user_answer, correct_answer):
     return (False, msg.format(wrong=user_answer, correct=correct_answer))
 
 
-def welcome_user():
-    """Ask username and print greeting."""
-    user_name = get_user_name()
-    greeting = f'Hello, {user_name}!'
-    print(greeting)
-    return user_name
-
-
-def engine(user_name, game_make_question):
-    """Engine of all games."""
-    correct_answers = 0
-    while correct_answers < NUMBER_OF_ROUNDS:
-        question, correct_answer = game_make_question()
-        print(question)
-        result, msg = check_answer(get_user_answer(), correct_answer)
-        print(msg)
-        if not result:
-            print(f"Let's try again, {user_name}!")
-            return
-        correct_answers += 1
-    print(f'Congratulations, {user_name}!')
 
 
 
-def get_user_name():
-    """Get username."""
-    return prompt.string('May I have your name? ')
 
 
-def get_user_answer():
-    """Get user answer."""
-    return prompt.string('Your answer: ')

@@ -2,13 +2,13 @@
 
 """Brain calc game."""
 
-from brain_games.engine import start
+from brain_games.engine import engine
 from brain_games.games import brain_calc
 
 
 def main():
     """Start even game."""
-    start(brain_calc)
+    engine(brain_calc)
 
 
 if __name__ == '__main__':
