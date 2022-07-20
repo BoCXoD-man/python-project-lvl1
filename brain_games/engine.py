@@ -47,10 +47,3 @@ def check_answer(user_answer, correct_answer):
         return (True, msg)
     msg = "'{wrong}' is wrong answer ;(. Correct answer was '{correct}'."
     return (False, msg.format(wrong=user_answer, correct=correct_answer))
-
-
-
-
-
-
-
