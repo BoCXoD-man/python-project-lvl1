@@ -3,11 +3,9 @@
 import prompt
 
 
-def get_user_name():
-    """Get username."""
-    return prompt.string('May I have your name? ')
-
-
-def get_user_answer():
-    """Get user answer."""
-    return prompt.string('Your answer: ')
+def welcome_user():
+    """Welcome to the game."""
+    print('Welcome to the Brain Games!')
+    name_user = prompt.string('May I have your name? ')
+    print('Hello, {0}!'.format(name_user))
+    return name_user
