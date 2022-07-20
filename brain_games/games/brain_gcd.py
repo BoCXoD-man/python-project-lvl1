@@ -3,7 +3,7 @@ from brain_games.engine import generate_number
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
-def make_question():
+def get_question_and_answer():
     """Generate question."""
     num1, num2 = generate_number(), generate_number()
     question = f'Question: {num1} {num2}'

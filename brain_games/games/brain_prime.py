@@ -3,7 +3,7 @@ from brain_games.engine import generate_number
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def make_question():
+def get_question_and_answer():
     """Generate question."""
     num = generate_number()
     question = f'Question: {num}'

@@ -12,7 +12,7 @@ operations = {
 }
 
 
-def make_question():
+def get_question_and_answer():
     """Generate question."""
     num1, num2 = generate_number(), generate_number()
     operation = choice(list(operations.keys()))  # oper - operation

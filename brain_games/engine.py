@@ -25,11 +25,9 @@ def engine(game=None):
     print(greeting)
     if game:
         print()
-        # run(user_name, game.make_question)
-        # The body of function "Run" below
         correct_answers = 0
         while correct_answers < NUMBER_OF_ROUNDS:
-            question, correct_answer = game.make_question()
+            question, correct_answer = game.get_question_and_answer()
             print(question)
             result, msg = check_answer(prompt.string('Your answer: '), correct_answer)
             print(msg)

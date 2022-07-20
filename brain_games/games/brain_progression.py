@@ -3,7 +3,7 @@ from brain_games.engine import generate_number
 DESCRIPTION = 'What number is missing in the progression?'
 
 
-def make_question():
+def get_question_and_answer():
     """Generate question."""
     len_pr = generate_number(5, 10)  # Len progression
     step_pr = generate_number(1, 10)  # Step progression
