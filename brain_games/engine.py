@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 """Game engine functions."""
 
-from random import randint
+import prompt
 
-from brain_games.cli import get_user_answer, get_user_name
+from random import randint
 
 NUMBER_OF_ROUNDS = 3
 
@@ -55,3 +55,14 @@ def engine(user_name, game_make_question):
             return
         correct_answers += 1
     print(f'Congratulations, {user_name}!')
+
+
+
+def get_user_name():
+    """Get username."""
+    return prompt.string('May I have your name? ')
+
+
+def get_user_answer():
+    """Get user answer."""
+    return prompt.string('Your answer: ')
