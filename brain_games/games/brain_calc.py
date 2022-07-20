@@ -17,10 +17,5 @@ def make_question():
     num1, num2 = generate_number(), generate_number()
     operation = choice(list(operations.keys()))  # oper - operation
     question = f'Question: {num1} {operation} {num2}'
-    answer = correct_answer(num1, num2, operation)
+    answer = str(operations[operator](num1, num2))
     return (question, answer)
-
-
-def correct_answer(num1, num2, oper):
-    """Return True answer."""
-    return str(operation[oper](num1, num2))
