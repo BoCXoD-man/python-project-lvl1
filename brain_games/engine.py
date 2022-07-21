@@ -3,14 +3,7 @@
 
 import prompt
 
-from random import randint
-
 NUMBER_OF_ROUNDS = 3
-
-
-def generate_number(n1=1, n2=100):
-    """Generate random Number"""
-    return randint(n1, n2)
 
 
 def engine(game=None):
@@ -19,7 +12,6 @@ def engine(game=None):
     if game:
         print(game.DESCRIPTION)
     print()
-    # Welcome user 3 string
     user_name = prompt.string('May I have your name? ')
     greeting = f'Hello, {user_name}!'
     print(greeting)

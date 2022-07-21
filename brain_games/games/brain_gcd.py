@@ -1,21 +1,12 @@
-from brain_games.engine import generate_number
+from random import randint
+from math import gcd
 
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
 def get_question_and_answer():
     """Generate question."""
-    num1, num2 = generate_number(), generate_number()
-    question = f'Question: {num1} {num2}'
-    answer = correct_answer(num1, num2)
+    number1, number2 = randint(1, 100), randint(1, 100)
+    question = f'Question: {number1} {number2}'
+    answer = str(gcd(number1, number2))
     return (question, answer)
-
-
-def correct_answer(num1, num2):
-    """Return True answer."""
-    num1, num2 = min(num1, num2), max(num1, num2)
-    list_com_div = []  # list_common_divisor
-    for i in range(1, num2 + 1):
-        if num1 % i == 0 and num2 % i == 0:
-            list_com_div.append(i)
-    return str(max(list_com_div))

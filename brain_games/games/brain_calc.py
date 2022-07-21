@@ -1,7 +1,6 @@
 import operator
-from random import choice
 
-from brain_games.engine import generate_number
+from random import choice, randint
 
 DESCRIPTION = 'What is the result of the expression?'
 
@@ -14,8 +13,8 @@ operations = {
 
 def get_question_and_answer():
     """Generate question."""
-    num1, num2 = generate_number(), generate_number()
-    operation = choice(list(operations.keys()))  # oper - operation
-    question = f'Question: {num1} {operation} {num2}'
-    answer = str(operations[operation](num1, num2))
+    number1, number2 = randint(1, 100), randint(1, 100)
+    operation = choice(list(operations.keys()))
+    question = f'Question: {number1} {operation} {number2}'
+    answer = str(operations[operation](number1, number2))
     return (question, answer)

@@ -1,13 +1,13 @@
 """Brain even game functions."""
 
-from brain_games.engine import generate_number
+from random import randint
 
 DESCRIPTION = 'Answer "yes" if number even otherwise answer "no".'
 
 
 def get_question_and_answer():
     """Generate question."""
-    number = generate_number()
+    number = randint(1, 100)
     question = f'Question: {number}'
     answer = correct_answer(number)
     return (question, answer)
