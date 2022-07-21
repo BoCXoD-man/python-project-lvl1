@@ -21,7 +21,8 @@ def engine(game=None):
         while correct_answers < NUMBER_OF_ROUNDS:
             question, correct_answer = game.get_question_and_answer()
             print(question)
-            result, msg = check_answer(prompt.string('Your answer: '), correct_answer)
+            answer_user = prompt.string('Your answer: ')
+            result, msg = correct_answer(answer_user, correct_answer)
             print(msg)
             if not result:
                 print(f"Let's try again, {user_name}!")
@@ -30,7 +31,7 @@ def engine(game=None):
         print(f'Congratulations, {user_name}!')
 
 
-def check_answer(user_answer, correct_answer):
+def correct_answer(user_answer, correct_answer):
     """Check users answer."""
     if user_answer == correct_answer:
         msg = 'Correct!'
