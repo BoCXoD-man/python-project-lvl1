@@ -22,7 +22,7 @@ def engine(game=None):
             question, correct_answer = game.get_question_and_answer()
             print(question)
             answer_user = prompt.string('Your answer: ')
-            result, msg = correct_answer(answer_user, correct_answer)
+            result, msg = check_answer(answer_user, correct_answer)
             print(msg)
             if not result:
                 print(f"Let's try again, {user_name}!")
@@ -31,7 +31,7 @@ def engine(game=None):
         print(f'Congratulations, {user_name}!')
 
 
-def correct_answer(user_answer, correct_answer):
+def check_answer(user_answer, correct_answer):
     """Check users answer."""
     if user_answer == correct_answer:
         msg = 'Correct!'
