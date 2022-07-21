@@ -5,6 +5,7 @@
 
 This is my first projects on the Python Software Developer course on [Hexlet.io](https://ru.hexlet.io)
 
+
 The package contains next short games:
 
 - 'Even or no even' `brain-even`
