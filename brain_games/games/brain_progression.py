@@ -1,29 +1,16 @@
-from random import randint
+from random import randint, choice
 
 DESCRIPTION = 'What number is missing in the progression?'
+PROGRESSION_LENGTH = 10
 
 
 def get_question_and_answer():
     """Generate question."""
-    len_progression = randint(5, 10)
-    step_progression = randint(1, 10)
-    list_progression = [randint(0, 90)]
-    question_progression = randint(0, len_progression - 1)
-    string_progression = ''
-    # Create progression
-    for i in range(1, len_progression):
-        list_progression.append(list_progression[i - 1] + step_progression)
-    # Correct answer:
-    ans_pr = list_progression[question_progression]
-    list_progression[question_progression] = '..'
-    # Create final Question
-    for i in list_progression:
-        string_progression += f'{i} '
-    question = f'Question: {string_progression}'
-    answer = correct_answer(ans_pr)
-    return (question, answer)
+    start, step = randint(1, 20), randint(1, 10)
+    progression = list(range(start, PROGRESSION_LENGTH * step + start, step))
 
-
-def correct_answer(ans_pr):
-    """Return True answer."""
-    return str(ans_pr)
+    answer = choice(progression)
+    question = 'Question:' + ' '.join(
+        '..' if number == answer else str(number) for number in progression
+    )
+    return question, str(answer)
