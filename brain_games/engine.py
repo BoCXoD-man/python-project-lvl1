@@ -10,12 +10,10 @@ def engine(game):
     print('Welcome to the Brain Games!')
     if game:
         print(game.DESCRIPTION)
-    print()
     user_name = prompt.string('May I have your name? ')
     greeting = f'Hello, {user_name}!'
     print(greeting)
     if game:
-        print()
         correct_answers = 0
         while correct_answers < NUMBER_OF_ROUNDS:
             question, correct_answer = game.get_question_and_answer()
