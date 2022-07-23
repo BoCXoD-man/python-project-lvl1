@@ -7,7 +7,7 @@ def get_question_and_answer():
     """Generate question."""
     number = randint(1, 100)
     question = f'Question: {number}'
-    answer = correct_answer(number)
+    answer = 'yes' if is_prime(number) else 'no'
     return (question, answer)
 
 
@@ -23,8 +23,3 @@ def is_prime(number):
             return False
         counter += 2
     return True
-
-
-def correct_answer(num):
-    """Return True answer."""
-    return 'yes' if is_prime(num) else 'no'
