@@ -26,7 +26,7 @@ def engine(game):
 
 def show_game_over(users_answer, correct_answer, user_name):
     """Show that the user's answer is incorrect and offers to play again."""
-    print(f"'{0}' is wrong answer ;(. Correct answer was '{1}'".format(
+    print("'{0}' is wrong answer ;(. Correct answer was '{1}'".format(
         users_answer,
         correct_answer,
     ))
