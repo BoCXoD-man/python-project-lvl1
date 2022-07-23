@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 """Game engine functions."""
 
 import prompt
