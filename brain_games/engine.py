@@ -5,7 +5,7 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def engine(game=None):
+def engine(game):
     """Start game."""
     print('Welcome to the Brain Games!')
     if game:
