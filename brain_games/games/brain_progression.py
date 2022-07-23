@@ -1,13 +1,13 @@
 from random import randint, choice
 
 DESCRIPTION = 'What number is missing in the progression?'
-PROGRESSION_LENGTH = 10
 
 
 def get_question_and_answer():
     """Generate question."""
+    progression_length = randint(5, 11)
     start, step = randint(1, 20), randint(1, 10)
-    progression = list(range(start, PROGRESSION_LENGTH * step + start, step))
+    progression = list(range(start, progression_length * step + start, step))
 
     answer = choice(progression)
     question = 'Question:' + ' '.join(
