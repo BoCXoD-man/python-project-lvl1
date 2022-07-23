@@ -14,24 +14,23 @@ def engine(game):
     greeting = f'Hello, {user_name}!'
     print(greeting)
     if game:
-        correct_answers = 0
-        while correct_answers < NUMBER_OF_ROUNDS:
+        for _ in range(NUMBER_OF_ROUNDS):
             question, correct_answer = game.get_question_and_answer()
             print(question)
-            answer_user = prompt.string('Your answer: ')
-            result, msg = check_answer(answer_user, correct_answer)
-            print(msg)
-            if not result:
-                print(f"Let's try again, {user_name}!")
-                return
-            correct_answers += 1
-        print(f'Congratulations, {user_name}!')
+            users_answer = prompt.string('Your answer: ')
+            if users_answer == correct_answer:
+                print('Correct!')
+                continue
+            check_answer(users_answer, correct_answer, user_name)
+            break
+        else:
+            print(f'Congratulations, {user_name}!')
 
 
-def check_answer(user_answer, correct_answer):
-    """Check users answer."""
-    if user_answer == correct_answer:
-        msg = 'Correct!'
-        return (True, msg)
-    msg = "'{wrong}' is wrong answer ;(. Correct answer was '{correct}'."
-    return (False, msg.format(wrong=user_answer, correct=correct_answer))
+def check_answer(users_answer, correct_answer, user_name):
+    """Show that the user's answer is incorrect and offers to play again."""
+    print("'{0}' is wrong answer ;(. Correct answer was '{1}'".format(
+        users_answer,
+        correct_answer,
+        ))
+    print("Let's try again, {0}!".format(user_name))
