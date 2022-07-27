@@ -3,3 +3,4 @@ __pycache__
 dist/
 brain_games/__pycache__/
 .idea
+.nano.swp 
