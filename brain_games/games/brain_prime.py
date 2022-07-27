@@ -14,7 +14,9 @@ def get_question_and_answer():
 def is_prime(number):
     """Prime number or no prime"""
     counter = 3
-    if number <= 3:
+    if number == 1:
+        return False
+    elif number <= 3:
         return True
     if not number % 2:
         return False
